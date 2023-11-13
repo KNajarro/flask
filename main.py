@@ -20,6 +20,7 @@ def enviar_mensaje():
 
     try:
         send_email(correo)
+        result = {'message': 'Mensaje enviado correctamente'}
     except Exception as e:
         print(e)
         result = {'message': 'Error al enviar el mensaje'}
